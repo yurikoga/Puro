@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fbc02d 0%, #f79f1a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.rating-card {
+    background: #fff;
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.emoji-container {
+    font-size: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stars {
+    margin-bottom: 30px;
+}
+
+.stars i {
+    font-size: 35px;
+    color: #e0e0e0; /* Cinza claro da imagem */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.stars i.active {
+    color: #ffc107; /* Amarelo ouro para estrelas selecionadas */
+}
+
+.footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+#rating-text {
+    font-weight: 400;
+}
